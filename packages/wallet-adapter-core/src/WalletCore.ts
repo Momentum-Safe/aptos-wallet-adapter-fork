@@ -1049,6 +1049,7 @@ export class WalletCore extends EventEmitter<WalletCoreEvents> {
 
       const aptosConfig = new AptosConfig({
         network: convertNetwork(this.network),
+        fullnode: "https://aptos.testnet.suzuka.movementlabs.xyz/v1",
       });
       const aptos = new Aptos(aptosConfig);
       if (additionalSignersAuthenticators !== undefined) {

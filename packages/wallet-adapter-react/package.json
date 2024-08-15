@@ -1,6 +1,6 @@
 {
-  "name": "@aptos-labs/wallet-adapter-react",
-  "version": "3.5.9",
+  "name": "@msafe-t/wallet-adapter-react",
+  "version": "3.5.14",
   "description": "Aptos Wallet Adapter React Provider",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -34,10 +34,13 @@
     "build": "pnpm build:bundle && pnpm build:declarations",
     "dev": "tsup src/index.tsx --format esm,cjs --watch",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-    "lint": "TIMING=1 eslint \"src/**/*.ts*\""
+    "lint": "TIMING=1 eslint \"src/**/*.ts*\"",
+    "changeset": "changeset",
+    "publish-packages": "changeset version && changeset publish"
   },
   "devDependencies": {
     "@aptos-labs/wallet-adapter-tsconfig": "workspace:*",
+    "@changesets/cli": "^2.22.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "eslint": "^8.15.0",
@@ -45,7 +48,7 @@
     "typescript": "^4.5.3"
   },
   "dependencies": {
-    "@aptos-labs/wallet-adapter-core": "workspace:*",
+    "@msafe-t/wallet-adapter-core": "4.13.4",
     "@radix-ui/react-slot": "^1.0.2"
   },
   "peerDependencies": {

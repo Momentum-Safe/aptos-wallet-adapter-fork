@@ -18,8 +18,8 @@ import type {
   Network,
   AptosStandardSupportedWallet,
   AvailableWallets,
-} from "@aptos-labs/wallet-adapter-core";
-import { DappConfig, WalletCore } from "@aptos-labs/wallet-adapter-core";
+} from "@msafe-t/wallet-adapter-core";
+import { DappConfig, WalletCore } from "@msafe-t/wallet-adapter-core";
 
 export interface AptosWalletProviderProps {
   children: ReactNode;

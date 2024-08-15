@@ -2,7 +2,7 @@ import {
   AnyAptosWallet,
   WalletReadyState,
   isRedirectable,
-} from "@aptos-labs/wallet-adapter-core";
+} from "@msafe-t/wallet-adapter-core";
 import { Slot } from "@radix-ui/react-slot";
 import { createContext, forwardRef, useCallback, useContext } from "react";
 import { useWallet } from "../useWallet";

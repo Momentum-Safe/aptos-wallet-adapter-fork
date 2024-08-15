@@ -1,4 +1,4 @@
-export * from "@aptos-labs/wallet-adapter-core";
+export * from "@msafe-t/wallet-adapter-core";
 export * from "./WalletProvider";
 export * from "./components/AboutAptosConnect";
 export * from "./components/AptosPrivacyPolicy";

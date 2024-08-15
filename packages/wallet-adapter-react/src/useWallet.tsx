@@ -16,7 +16,7 @@ import {
   AptosChangeNetworkOutput,
   Network,
   AptosStandardSupportedWallet,
-} from "@aptos-labs/wallet-adapter-core";
+} from "@msafe-t/wallet-adapter-core";
 import { createContext, useContext } from "react";
 
 export interface WalletContextState {
